@@ -7,6 +7,12 @@
     "dev": "webpack-dev-server --mode 'development' --devtool 'eval-source-map'",
     "build": "webpack --mode 'production' --devtool 'source-map'",
     "typecheck": "tsc -p . --noEmit",
+    "lint": "npm run lint:prettier && npm run lint:eslint",
+    "lint:prettier": "prettier --check src",
+    "lint:eslint": "eslint src",
+    "fix": "npm run fix:prettier && npm run fix:eslint",
+    "fix:prettier": "prettier --write src",
+    "fix:eslint": "eslint --fix src",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "pione30 <g.pionelish30@gmail.com>",
