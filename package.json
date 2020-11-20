@@ -5,7 +5,7 @@
   "main": "src/index.tsx",
   "scripts": {
     "dev": "webpack serve --mode development --devtool eval-source-map",
-    "build": "webpack --mode production --devtool source-map",
+    "build": "webpack --mode production",
     "typecheck": "tsc -p . --noEmit",
     "lint": "npm run lint:prettier && npm run lint:eslint",
     "lint:prettier": "prettier --check src",
