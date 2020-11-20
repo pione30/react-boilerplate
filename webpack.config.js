@@ -27,6 +27,10 @@ module.exports = {
     ],
   },
 
+  devServer: {
+    open: true,
+  },
+
   resolve: {
     extensions: [".ts", ".tsx", ".wasm", ".mjs", ".js", ".json"],
   },
