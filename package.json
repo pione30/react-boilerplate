@@ -4,8 +4,8 @@
   "description": "react-boilerplate",
   "main": "src/index.tsx",
   "scripts": {
-    "dev": "webpack-dev-server --mode 'development' --devtool 'eval-source-map'",
-    "build": "webpack --mode 'production' --devtool 'source-map'",
+    "dev": "webpack serve --mode development --devtool eval-source-map",
+    "build": "webpack --mode production --devtool source-map",
     "typecheck": "tsc -p . --noEmit",
     "lint": "npm run lint:prettier && npm run lint:eslint",
     "lint:prettier": "prettier --check src",
@@ -19,25 +19,25 @@
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   },
   "devDependencies": {
-    "@types/react": "^16.9.35",
-    "@types/react-dom": "^16.9.8",
-    "@typescript-eslint/eslint-plugin": "^2.34.0",
-    "@typescript-eslint/parser": "^2.34.0",
+    "@types/react": "^16.14.0",
+    "@types/react-dom": "^16.9.9",
+    "@typescript-eslint/eslint-plugin": "^4.8.1",
+    "@typescript-eslint/parser": "^4.8.1",
     "clean-webpack-plugin": "^3.0.0",
-    "eslint": "^7.12.1",
+    "eslint": "^7.13.0",
     "eslint-config-prettier": "^6.15.0",
     "eslint-plugin-react": "^7.21.5",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "html-webpack-plugin": "^4.3.0",
-    "prettier": "^2.1.2",
-    "ts-loader": "^7.0.4",
-    "typescript": "^3.9.2",
-    "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.11",
+    "html-webpack-plugin": "^4.5.0",
+    "prettier": "^2.2.0",
+    "ts-loader": "^8.0.11",
+    "typescript": "^4.1.2",
+    "webpack": "^5.6.0",
+    "webpack-cli": "^4.2.0",
     "webpack-dev-server": "^3.11.0"
   }
 }
